@@ -1,0 +1,45 @@
+<% var title = 'Login' %>
+
+<%-include('header.ejs', {title: title})%>
+
+    <section class="login container">
+        <h2 class="login_title"> - 로그인 - </h2>
+
+        <form class="login_content">
+            <div class="form-floating mb-3">
+                <input type="text" class="id form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">아이디</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="password form-control" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">패스워드</label>
+            </div>
+            
+            <div class="login_btn d-grid gap-2">
+                <button type="submit" class="login_btn_submit btn btn-outline-dark btn-lg">로그인</button>
+                <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">비밀번호 찾기</button>
+            </div>
+        </form>
+            
+    </section>
+    
+<%-include('footer.ejs')%>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">비밀번호 찾기</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            비밀번호 찾기 구현 예정
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>

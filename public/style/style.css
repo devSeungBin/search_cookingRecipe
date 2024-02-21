@@ -1,0 +1,204 @@
+@import "reset.css";
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* header.ejs */
+
+header {
+    font-family: 'omyu_pretty';
+    margin: 2rem 4rem;
+    padding-bottom: 2rem;
+
+    border-bottom: 0.1rem solid #000;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.link {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0 1rem;
+
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #888;
+
+    text-decoration: underline;
+}
+
+/* searchRecipe.ejs */
+
+.searchRecipe {
+    font-family: 'omyu_pretty';
+}
+
+.recipeInput_title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipeInput {
+    margin-bottom: 4rem;
+}
+
+.recipeInput_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipeResult {
+    width: 50%;
+    margin: 0 auto;
+
+    visibility: hidden;
+}
+
+.recipeResult.active {
+    visibility: visible;
+}
+
+.recipeResult > .recipeResult_title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipeResult > .recipeResult_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.pageNum {
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* login.ejs */
+
+.login {
+    font-family: 'omyu_pretty';
+}
+
+.login_title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login_content {
+    max-width: 32rem;
+    margin: 0 auto 1.5rem;
+}
+
+.login_btn {
+    max-width: 32rem;
+    margin: 1.5rem auto 0;
+    padding: 1.5rem 0 0;
+
+    border-top: 0.1rem solid #000;
+}
+
+.login_btn button:nth-of-type(2) {
+    margin: 0.3rem 0;
+}
+
+/* register.ejs */
+
+.register {
+    font-family: 'omyu_pretty';
+}
+
+.register_title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.register_content {
+    max-width: 32rem;
+    margin: 0 auto 1.5rem;
+}
+
+.register_btn {
+    max-width: 32rem;
+    margin: 1.5rem auto 0;
+    padding: 1.5rem 0 0;
+
+    border-top: 0.1rem solid #000;
+}
+
+/* mypage.ejs */
+
+.mypage {
+    font-family: 'omyu_pretty';
+}
+
+.mypage_title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mypage_content {
+    max-width: 40rem;
+    margin: 0 auto 1.5rem;
+}
+
+/* footer.ejs */
+
+footer {
+    font-family: 'omyu_pretty';
+    margin: 3rem 0 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* modal */
+
+.modal {
+    font-family: 'omyu_pretty';
+}

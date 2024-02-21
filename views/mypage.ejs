@@ -1,0 +1,43 @@
+<% var title = 'Mypage' %>
+
+<%-include('header.ejs', {title: title})%>
+
+    <section class="mypage container">
+        <h2 class="mypage_title"> - 마이페이지 - </h2>
+
+        <div class="mypage_content table-responsive">
+            <table class="table caption-top">
+                <caption>내가 찜한 레시피</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">레시피 이름</th>
+                        <th scope="col">레시피 주소</th>
+                        <th scope="col">설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>맛있는 스파게티</td>
+                        <td>주소</td>
+                        <td>맛이 존재하는 스파게티</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>만들기 쉬운 파스타</td>
+                        <td>주소</td>
+                        <td>만들기 매우 쉬움</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>삐쓰까또레부르쥬미첼라햄페스츄리치즈나쵸스트링스파게티</td>
+                        <td>주소</td>
+                        <td>이름이 매우 김</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+<%-include('footer.ejs')%>

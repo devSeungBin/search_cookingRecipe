@@ -1,0 +1,38 @@
+<% var title = 'SearchRecipe' %>
+
+<%-include('header.ejs', {title: title})%>
+
+    <section class="searchRecipe container">
+        <h2 class="recipeInput_title"> - 레시피 검색하기 - </h2>
+
+        <div class="recipeInput">
+            <div class="recipeInput_content">
+                <input class="searchText" type="text" placeholder="검색할 레시피 입력"></input>
+                <button class="searchBtn" onclick="searchRecipe()">검색</button>   
+            </div>
+        </div>
+
+        <div class="recipeResult">
+            <h2 class="recipeResult_title"></h2>
+          
+            <div class="recipeResult_content">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- 여기에 글 추가됨 -->
+                </div>
+            </div>
+
+            <div class="pageNum"></div>
+
+            <div class="recipeResult_navigation">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <!-- 여기에 페이지 버튼 추가됨 -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+<%-include('footer.ejs')%>
+
+<script src="script/searchRecipe.js"></script>

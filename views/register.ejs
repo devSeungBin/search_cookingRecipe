@@ -1,0 +1,42 @@
+<% var title = 'Register' %>
+
+<%-include('header.ejs', {title: title})%>
+
+    <section class="register container">
+        <h2 class="register_title"> - 회원가입 - </h2>
+
+        <form class="register_content">
+            <div class="mb-3 row">
+                <label for="name" class="col-sm-2 col-form-label">이름</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputName" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="email" class="col-sm-2 col-form-label">이메일</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="id" class="col-sm-2 col-form-label">아이디</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputId" required>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="password" class="col-sm-2 col-form-label">패스워드</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword" required>
+                </div>
+            </div>
+
+            <div class="register_btn d-grid gap-2">
+                <button type="submit" class="btn btn-outline-dark btn-lg">회원가입</button>
+            </div>
+        </form>
+
+
+    </section>
+
+<%-include('footer.ejs')%>
