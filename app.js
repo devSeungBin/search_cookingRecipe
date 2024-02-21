@@ -2,8 +2,9 @@ const express = require('express')
 const ejs = require('ejs')
 const bodyParser = require('body-parser')
 const mysql = require('mysql2')
-const http = require("http");
 require('dotenv').config()
+
+const serverless = require('serverless-http');
 
 const app = express()
 const port = 3000
@@ -40,6 +41,4 @@ app.get('/mypage', (req, res) => {
 //     console.log(`Example app listening on port ${port}`)
 //  })
   
-http.createServer(app).listen(port, () => {
-    console.log(`app listening at ${port}`);
-});
+module.exports.handler = serverless(app);
