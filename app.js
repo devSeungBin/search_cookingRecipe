@@ -2,6 +2,7 @@ const express = require('express')
 const ejs = require('ejs')
 const bodyParser = require('body-parser')
 const mysql = require('mysql2')
+const http = require("http");
 require('dotenv').config()
 
 const app = express()
@@ -35,7 +36,10 @@ app.get('/mypage', (req, res) => {
     res.render('mypage')
 })
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-  })
+// app.listen(port, () => {
+//     console.log(`Example app listening on port ${port}`)
+//  })
   
+http.createServer(app).listen(port, () => {
+    console.log(`app listening at ${port}`);
+});
