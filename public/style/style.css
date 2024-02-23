@@ -65,9 +65,15 @@ header {
 }
 
 .recipeInput_content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    max-width: 24rem;
+    margin: 0 auto;
+}
+
+.recipeInput_text {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    border-bottom: 0.1rem solid #000;
 }
 
 .recipeResult {
@@ -195,7 +201,6 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 
 /* modal */
 

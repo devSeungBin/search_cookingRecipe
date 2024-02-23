@@ -7,8 +7,14 @@
 
         <div class="recipeInput">
             <div class="recipeInput_content">
-                <input class="searchText" type="text" placeholder="검색할 레시피 입력"></input>
-                <button class="searchBtn" onclick="searchRecipe()">검색</button>   
+                <div class="recipeInput_text form-floating">
+                    <input type="text" class="searchText id form-control" id="floatingInput" placeholder="food's name to search recipe">
+                    <label for="floatingInput">요리 이름</label>
+                </div>
+
+                <div class="d-grid">
+                    <button type="button" class="searchBtn btn btn-outline-dark" onclick="searchRecipe()">검색</button>
+                </div>
             </div>
         </div>
 
